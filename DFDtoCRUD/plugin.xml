@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.chartdiagram"
+		name="Chart Diagram"
+		description="Chart  Diagram"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.chartdiagram.ChartDiagramPlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.chartdiagram.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.chartdiagram.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.chartdiagram.actionset1.ChartDiagramAction"
+					actionType="generalAction"
+      		name="Chart Diagram"
+		      description="Copy"
+					style="normal"
+          tooltip="Chart Diagram"
+          icon="icons/chart_icon.png"
+					toolbarPath="com.vp.plugin.sample.chartdiagram.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.chartdiagram.actions.ChartDiagramActionControl"/>
+			</action>
+			
+		</actionSet>
+	</actionSets>	
+</plugin>
